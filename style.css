@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.top-bar{
+   text-align: right;
+   background-color: black;
+   padding:10px 30px;
+}
+
+.top-bar a{
+   text-decoration: none;
+   color:#fff;
+   font-size:12px;
+   padding:0px 10px;
+ }
+
+header {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+header .main-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+    /* align-items: flex-start; */
+}
+
+
+
+header .main-menu a {
+    margin: 10px 0;
+}
+header .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+header .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+}
+.hero {
+    background: #fff;
+    padding: 60px;
+    display: flex;
+}
+.hero .left{
+   flex: 1 0 50%;
+}
+.hero .right{
+    flex: 1 0 50%;
+    text-align: center;
+}
+.hero .right img{
+    width:70%;
+}
+
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight:700 ;
+}
+.hero h1 span{
+    color:#fe196e;
+}
+.hero p {
+    font-size: 1em;
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+
+.hero .buttons a:nth-child(1) {
+    margin: 0 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: #253CFF;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.hero .buttons a:nth-child(2) {
+    margin: 0 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border:1px solid black;
+    color:black;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.trusted-by {
+    background: #f9e5d5;
+    text-align: center;
+    border: 100px solid #f9e5d5;
+    border-radius:300px 0 0 0;
+    display: flex;      
+    flex-direction: column;
+    align-items: center;
+}
+
+.trusted-by .logos{
+  width: 70%;
+}
+.trusted-by img {
+    max-width: 120px;
+    margin: 20px;
+    vertical-align: middle;
+    opacity:0.6;
+}
+
+.trusted-by h2{
+    font-size:2em;
+    font-weight:bolder;
+    width: 70%;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+}
+footer a {
+    color: #e45a84;
+    text-decoration: none;
+}
+
+.main-menu.open {
+    display: flex !important;
+}
+
+/* -------------------------------------------- */
+
+@media (max-width: 767px) {
+    .top-bar a{
+        font-size:10px;
+        padding:0px 5px;
+    }
+
+    header nav {
+        display: none;
+    }
+    header .hamburger {
+        display: flex;
+    }
+
+    header .hamburger div {
+       margin:3px 0px;
+    }
+
+    header{
+        background-color:#d9cbbd;
+    }
+
+   header .main-menu{
+    background-color:#f7efe7;
+   }
+
+   .hero {
+    flex-direction: column;
+    gap:100px;
+    padding:60px 20px;
+ }
+
+ .hero h1{
+    font-size:2em;
+ }
+
+ .hero p{
+    font-size:0.9em;
+ }
+
+   .hero .left{
+    flex: 1 0 100%;
+    text-align: center;
+ }
+ .hero .right{
+     flex: 1 0 100%;
+     text-align: center;
+ }
+
+ .hero .buttons a{
+    font-size:12px;
+    margin-left:0px;
+    margin-right:0px
+}
+
+.trusted-by {
+    background: #f9e5d5;
+    text-align: center;
+    border: 100px solid #f9e5d5;
+    border-radius:300px 0 0 0;
+    display: flex;      
+    flex-direction: column;
+    align-items: center;
+}
+.trusted-by .logos{
+    width: 100%;
+  }
+
+.trusted-by h2{
+  width:100%;
+  font-size:1.7em;
+
+}
+}
+
+/* ------------------------------------------ */
+
+@media (max-width: 430px) {
+    .top-bar a{
+       visibility:hidden;
+    }
+}
+
+/* --------------------------------------------- */
+
+@media (min-width:1023px){  
+
+header img{
+    flex-basis:20%;
+}
+
+header nav{
+    flex-basis:80%;
+    justify-content:space-between;
+}
+
+header nav a{
+    font-size:15px;
+    font-weight:600;
+}
+}
+
+
+    
