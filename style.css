@@ -164,8 +164,9 @@ footer a {
 
 .main-menu.open {
     display: flex !important;
-    transform:translatey(50px);
+    transform:translate(50px);
 }
+
 
 /* --------------------------------------------- */
 
@@ -179,8 +180,14 @@ footer a {
 
     header .hamburger div {
        margin:3px 0px;
-    
+    }
 
+  .hero .buttons a{
+    font-size:13px!important;
+    margin:0px;
+    padding:5px 12px;
+  }
+}
 
 
 /* -------------------------------------------- */
@@ -232,13 +239,12 @@ footer a {
 .trusted-by {
     background: #f9e5d5;
     text-align: center;
-    border-width: 30px;
+    border-width:30px;
     border-radius:0px;
     display: flex;      
     flex-direction: column;
     align-items: center;
 }
-    
 .trusted-by .logos{
     width: 100%;
   }
