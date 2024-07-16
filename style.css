@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f9f9f9;
+/*     background-color: #f9f9f9; */
     color: #333;
 }
 
@@ -164,7 +164,7 @@ footer a {
 
 .main-menu.open {
     display: flex !important;
-    transform:translate(50px);
+    transform:translatey(50px);
 }
 
 
